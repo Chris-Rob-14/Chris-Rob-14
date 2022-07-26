@@ -1,0 +1,163 @@
+.localisation{
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 1rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.fa-map-marker-alt{
+    margin-right: 0.8rem;
+}
+
+.localisation__texte{
+    font-weight: 500;
+}
+
+.intro{
+    padding: 2rem;
+    text-align: center;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro__titre{
+    font-size: 1.3rem;
+}
+
+.etapes{
+    padding: 1.5rem 0.5rem;
+}
+
+.titre__etapes{
+    margin-top: 0;
+}
+
+.container{
+    margin: auto;
+    max-width: 1440px;
+    position: relative;
+}
+
+.tuto__etapes{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: compteListe;
+}
+
+.tuto__etape{
+    display: flex;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: #f6f6f6;
+    border-radius: 1.25rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,.125);
+    position: relative;
+    align-items: center;
+}
+
+.tuto__icone{
+    margin-right: 0.8rem;
+    color: #7e7e7e;
+    margin-left: 10px;
+}
+
+.pastille__num{
+    position: absolute;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 20px;
+    color: $white;
+    background-color: $primary;
+}
+
+.tuto__etape:hover{
+    background-color: lighten($primary, 30%)
+} 
+.tuto__icone:hover{
+    color: #9356DC
+}
+
+.restaurants{
+    background-color: #f6f6f6;
+    padding: 2rem 0.5rem;
+}
+
+.cartes__restaurants{
+    @include flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    gap: 2rem;
+}
+
+.carte{
+    background-color: #fff;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    flex-basis: 40%;
+}
+
+.carte__img{
+    height: 12rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+    min-width: 255px;
+}
+
+.carte__marqueur{
+    background-color: $tertiary;
+    color: #1b6150;
+    padding: 0.5rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
+}
+
+.carte__pied{
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contenu__carte{
+    flex: 1;
+}
+
+.carte__titre{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.texte{
+    margin-left: 12px;
+}
+
+@media screen and (min-width:765px){
+    .titre__etapes, .titre__restaurants{
+       text-align: center;
+}
+
+.tuto__etapes{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.cartes__restaurants{
+    gap: 4rem;
+}
+}

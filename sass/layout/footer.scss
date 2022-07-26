@@ -1,0 +1,32 @@
+footer{
+    background-color: #353535;  
+    padding: 1rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.footer__logo{
+    color: $white;
+    font-family: Shrikhand,"cursive";
+    font-size: 1.2rem;
+    margin: 0 0 1rem;
+}
+
+.footer__liste{
+    list-style: none;
+    padding: 0;
+    margin: 0;    
+}
+
+.footer__ssliste{
+    margin: 0.5rem 0;
+}
+
+.footer__lien{
+    color: $white;
+    text-decoration: none;
+}

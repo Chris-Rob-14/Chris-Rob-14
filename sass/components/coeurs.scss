@@ -1,0 +1,9 @@
+.remplissage:hover {
+      transition: all 1s linear;
+      display: inline-block;
+      opacity: 1;
+      background:linear-gradient(270deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color:transparent;
+      font-weight: bold;
+    }

@@ -1,0 +1,27 @@
+.logo{
+    @include flex;
+    height: 70px;
+}
+
+#logo{
+    height: 100%;
+    width: 180px;
+    object-fit: contain;
+}
+
+.logo__fleche__retour{
+    @include flex;
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+
+.logo__fleche__retour a{
+    @include flex;
+    position: absolute;
+    height: 100%;
+    width: 70px;
+    left: 0;
+    text-decoration: none;
+    color: black;  
+}
