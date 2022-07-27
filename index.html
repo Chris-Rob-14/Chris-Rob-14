@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="author" content="Christopher ROBINE"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/1a886dd83b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -26,10 +27,10 @@
         <div class="loader"></div>
       </div>
       <!--intro et fonctionnement-->
-      <section class="localisation">
+      <div class="localisation">
         <i class="fa-map-marker-alt fas"></i>
         <span class="localisation__texte">Paris, Belleville</span>
-      </section>
+      </div>
       <section class="intro">
         <h2 class="intro__titre">Réservez le menu qui vous convient</h2>
         <p class="intro__sstitre">
@@ -65,16 +66,17 @@
           <h2 class="titre__restaurants">Restaurants</h2>
           <div class="cartes__restaurants">
             <a class="carte" href="/la-palette-du-gout.html">
-              <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"alt="une entrée gastronomique" class="carte__img"/>
+              <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="une entrée gastronomique" class="carte__img"/>
               <span class="carte__marqueur">Nouveau</span>
               <div class="carte__pied">
                 <div class="contenu__carte">
                   <h3 class="carte__titre">La palette du goût</h3>
                   <span class="carte__ville">Ménilmontant</span>
                 </div>
-                <div class="coeur__rempli">
-                  <span><i class=" far fa-heart fa-2x remplissage"></i></span>
-              </div>
+                  <span class="coeur">
+                    <i class="fa-regular fa-heart fa-stack-2x"></i>
+                    <i class="fa-solid fa-stack-2x fa-heart"></i>
+                  </span>
               </div>
             </a>
             <a class="carte" href="/la-note-enchantee.html">
@@ -85,9 +87,10 @@
                   <h3 class="carte__titre">La note enchantée</h3>
                   <span class="carte__ville">Charonne</span>
                 </div>
-                <div class="carte__btn coeur__menu">
-                  <i class="fa-2x fa-heart far"></i>
-                </div>
+                <span class="coeur">
+                  <i class="fa-regular fa-heart fa-stack-2x"></i>
+                  <i class="fa-solid fa-stack-2x fa-heart"></i>
+                </span>                
               </div>
             </a>
             <a class="carte" href="/a-la-francaise.html">
@@ -97,9 +100,10 @@
                   <h3 class="carte__titre">À la française</h3>
                   <span class="carte__ville">Cité Rouge</span>
                 </div>
-                <div class="carte__btn coeur__menu">
-                  <i class="fa-2x fa-heart far"></i>
-                </div>
+                <span class="coeur">
+                  <i class="fa-regular fa-heart fa-stack-2x"></i>
+                  <i class="fa-solid fa-stack-2x fa-heart"></i>
+                </span>
               </div>
             </a>
             <a class="carte" href="/le-delice-des-sens.html">
@@ -109,9 +113,10 @@
                   <h3 class="carte__titre">Le délice des sens</h3>
                   <span class="carte__ville">Folie-Méricourt</span>
                 </div>
-                <div class="carte__btn coeur__menu">
-                  <i class="fa-2x fa-heart far"></i>
-                </div>
+                <span class="coeur">
+                  <i class="fa-regular fa-heart fa-stack-2x"></i>
+                  <i class="fa-solid fa-stack-2x fa-heart"></i>
+                </span>
               </div>
             </a>
           </div>
