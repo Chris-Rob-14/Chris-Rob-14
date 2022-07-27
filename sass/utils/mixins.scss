@@ -29,6 +29,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  font-family: 'shrikhand';
 }
 
 @mixin proposition {
@@ -80,15 +81,4 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-@mixin tablette {
-  @media screen and (min-width:map-get($breakpoints, tablette)){
-    @content;
-  }
-}
-@mixin desktop {
-  @media screen and (min-width:map-get($breakpoints, desktop)){
-    @content;
-  }
 }

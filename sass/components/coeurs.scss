@@ -1,9 +1,41 @@
-.remplissage:hover {
-      transition: all 1s linear;
-      display: inline-block;
-      opacity: 1;
-      background:linear-gradient(270deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color:transparent;
-      font-weight: bold;
-    }
+.coeur{
+  display: flex;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+}
+
+.coeur__menu{
+  display: flex;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+}
+
+.fa-regular {
+  font-size:33px;
+  color: black;
+  opacity: 1;
+  display: flex;
+  padding: 10px;
+  position: absolute;
+  left: 85%;
+}
+
+.fa-solid {
+  opacity:0;
+  font-size:35px;
+  background: $linear-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.2s linear;
+  display: flex;
+  padding: 9px;
+}
+
+.fa-solid:hover {
+  opacity:1;
+  display: flex;
+  position: absolute;
+  left: 85%;
+}

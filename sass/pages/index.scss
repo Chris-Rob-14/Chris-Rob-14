@@ -81,8 +81,9 @@
 .tuto__etape:hover{
     background-color: lighten($primary, 30%)
 } 
+
 .tuto__icone:hover{
-    color: #9356DC
+    color: $primary
 }
 
 .restaurants{
@@ -98,7 +99,7 @@
 }
 
 .carte{
-    background-color: #fff;
+    background-color: $white;
     border-radius: 1rem;
     position: relative;
     text-decoration: none;

@@ -49,6 +49,7 @@
 .description p{
     margin: 0;
 }
+
 .proposition{
     background-color: $white;
     border-radius: 15px;
@@ -67,11 +68,13 @@
 
 .proposition:hover {
     padding-right: 75px;
-  }
+}
+
   .proposition:hover .valide {
     opacity: 1;
     transform: translate(-50px);
-  }
+}
+
   .proposition:hover .fa-check-circle {
     transform: rotate(360deg);
 }
@@ -88,4 +91,15 @@
 
 .description, .description h4, .description p{
     @include ellipsis
+}
+
+@media screen and (min-width:900px){
+    .menu__complet{
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .entrees, .plats, .desserts{
+        display: grid;
+    }
 }
