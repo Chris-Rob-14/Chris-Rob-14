@@ -4,7 +4,8 @@
   "description": "projet 3 Oh my food formation dev web OCR \r Voici ma présenation du projet 3 de la formation développeur web OCR.",
   "main": "index.js",
   "scripts": {
-    "sass" : "sass --watch ./sass/main.scss:public/css/style.css --style compressed"
+    "sass" : "sass --watch ./sass/main.scss:public/css/style.css --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserlist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Chris-Rob-14/Oh-my-food-OCR-RC/issues"
   },

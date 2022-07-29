@@ -1,41 +1,14 @@
-.coeur{
-  display: flex;
-  align-items: center;
-  height: 35px;
-  width: 35px;
+.far{
+  font-size: 35px;
+
 }
 
-.coeur__menu{
-  display: flex;
-  align-items: center;
-  height: 35px;
-  width: 35px;
-}
-
-.fa-regular {
-  font-size:33px;
-  color: black;
-  opacity: 1;
-  display: flex;
-  padding: 10px;
-  position: absolute;
-  left: 85%;
-}
-
-.fa-solid {
-  opacity:0;
-  font-size:35px;
-  background: $linear-gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: opacity 0.2s linear;
-  display: flex;
-  padding: 9px;
-}
-
-.fa-solid:hover {
-  opacity:1;
-  display: flex;
-  position: absolute;
-  left: 85%;
+.far:hover {
+  animation: coeurcouleur 0.5s linear;
+    font-weight: 900;
+    background: $linear-gradient;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }

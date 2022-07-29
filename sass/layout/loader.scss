@@ -7,7 +7,7 @@
     inset: 0;
     @include flex;
     opacity: 1;
-    animation: disappear 0.5s $animation-duration;
+    animation: disparition 0.5s $animation-duration;
     transform-origin: top;
     animation-fill-mode: forwards;
 }
@@ -16,7 +16,7 @@
     height: 48px;
     border-radius: 50%;
     position: relative;
-    animation: rotate $animation-duration linear infinite;
+    animation: rotation $animation-duration linear infinite;
   }
   .loader::before , .loader::after {
     content: "";
@@ -25,10 +25,10 @@
     inset: 0px;
     border-radius: 50%;
     border: 5px solid #9356DC;
-    animation: prixClipFix $animation-duration linear infinite ;
+    animation: ClipFix $animation-duration linear infinite ;
   }
   .loader::after{
     border-color: #FF79DA;
-    animation: prixClipFix $animation-duration linear infinite , rotate 0.5s linear infinite reverse;
+    animation: ClipFix $animation-duration linear infinite , rotation 0.5s linear infinite reverse;
     inset: 6px;
   }

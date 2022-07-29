@@ -1,7 +1,6 @@
 .localisation{
     background-color: #f3f3f3;
-    display: flex;
-    justify-content: center;
+    @include flex;
     padding: 1.25rem 1rem;
     font-size: 1.2rem;
     position: relative;
@@ -88,7 +87,7 @@
 
 .restaurants{
     background-color: #f6f6f6;
-    padding: 2rem 0.5rem;
+    padding: 2rem 0rem;
 }
 
 .cartes__restaurants{
@@ -105,7 +104,10 @@
     text-decoration: none;
     color: inherit;
     display: block;
-    flex-basis: 40%;
+    flex-basis: 90%;
+    @media screen and (min-width: 765px){
+        flex-basis: 40%
+    };
 }
 
 .carte__img{
@@ -124,22 +126,6 @@
     position: absolute;
     top: 1rem;
     right: 0.75rem;
-}
-
-.carte__pied{
-    padding: 1rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.contenu__carte{
-    flex: 1;
-}
-
-.carte__titre{
-    margin-top: 0;
-    margin-bottom: 5px;
 }
 
 .texte{
@@ -161,4 +147,12 @@
 .cartes__restaurants{
     gap: 4rem;
 }
+}
+
+.carte__pied{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
 }
