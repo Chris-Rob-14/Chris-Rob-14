@@ -7,11 +7,18 @@
 }
 
 .fa-map-marker-alt{
-    margin-right: 0.8rem;
+    margin-right: 0.5rem;
+    color: dimgray;
 }
 
 .localisation__texte{
     font-weight: 500;
+    color: dimgray;
+    font-size: medium;
+    outline: none;
+    border:1px solid #f2f2f2;
+    padding: 5px;
+
 }
 
 .intro{
@@ -24,11 +31,15 @@
 }
 
 .intro__titre{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+}
+
+.intro__sstitre{
+    font-weight: lighter;
 }
 
 .etapes{
-    padding: 1.5rem 0.5rem;
+    padding: 1rem;
 }
 
 .titre__etapes{
@@ -39,6 +50,8 @@
     margin: auto;
     max-width: 1440px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .tuto__etapes{
@@ -51,18 +64,25 @@
 .tuto__etape{
     display: flex;
     padding: 1.5rem;
-    margin: 1rem 0;
+    margin: 1rem 0.7rem;
     background-color: #f6f6f6;
     border-radius: 1.25rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,.125);
     position: relative;
     align-items: center;
+    &:hover{
+        background-color: lighten($primary, 30%);
+        cursor: pointer; 
+    }
 }
 
 .tuto__icone{
     margin-right: 0.8rem;
     color: #7e7e7e;
-    margin-left: 10px;
+}
+
+.tuto__icone:hover{
+            color: $primary; 
 }
 
 .pastille__num{
@@ -78,16 +98,16 @@
 }
 
 .tuto__etape:hover{
-    background-color: lighten($primary, 30%)
+    background-color: lighten($primary, 30%);
+    cursor: pointer;
+
 } 
 
-.tuto__icone:hover{
-    color: $primary
-}
+
 
 .restaurants{
     background-color: #f6f6f6;
-    padding: 2rem 0rem;
+    padding: 1rem;
 }
 
 .cartes__restaurants{
@@ -104,8 +124,8 @@
     text-decoration: none;
     color: inherit;
     display: block;
-    flex-basis: 90%;
-    @media screen and (min-width: 765px){
+    flex-basis: 100%;
+    @media screen and (min-width: 767px){
         flex-basis: 40%
     };
 }
@@ -120,16 +140,14 @@
 
 .carte__marqueur{
     background-color: $tertiary;
-    color: #1b6150;
+    color: lighten($color: #1b6150, $amount: 10%);
     padding: 0.5rem;
     border-radius: 5px;
     position: absolute;
     top: 1rem;
     right: 0.75rem;
-}
-
-.texte{
-    margin-left: 12px;
+    font-size: small;
+    font-weight: bold;
 }
 
 @media screen and (min-width:765px){
@@ -155,4 +173,13 @@
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-between;
+}
+
+.carte__titre{
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.carte__ville{
+    font-size: large;
 }
