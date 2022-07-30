@@ -1,7 +1,7 @@
 # Oh-my-food-OCR-RC
 Réalisaition du projet 3 de la formation développeur web via Open Classroom.
 
-Technoloig utilisée : HTML5 - CSS3 - SASS (SCSS) - AUOTPREFIXER - POSTCSS - Git - GitHub - GitHub Pages
+Technoloig utilisée : HTML5 - CSS3 - SASS (SCSS) - AUOTPREFIXER - POSTCSS - GIT - GITHUB - GIT HUB PAGES
 
 Les objectifs : 
 
