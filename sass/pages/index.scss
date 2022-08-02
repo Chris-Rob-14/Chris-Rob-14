@@ -59,6 +59,10 @@
     padding: 0;
     list-style: none;
     counter-reset: compteListe;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-around;
 }
 
 .tuto__etape{
@@ -96,14 +100,6 @@
     color: $white;
     background-color: $primary;
 }
-
-.tuto__etape:hover{
-    background-color: lighten($primary, 30%);
-    cursor: pointer;
-
-} 
-
-
 
 .restaurants{
     background-color: #f6f6f6;
@@ -153,13 +149,6 @@
 @media screen and (min-width:765px){
     .titre__etapes, .titre__restaurants{
        text-align: center;
-}
-
-.tuto__etapes{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    justify-content: space-around;
 }
 
 .cartes__restaurants{

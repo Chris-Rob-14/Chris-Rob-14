@@ -11,6 +11,7 @@
     transform-origin: top;
     animation-fill-mode: forwards;
 }
+
 .loader {
     width: 48px;
     height: 48px;
@@ -18,6 +19,7 @@
     position: relative;
     animation: rotation $animation-duration linear infinite;
   }
+
   .loader::before , .loader::after {
     content: "";
     box-sizing: border-box;
@@ -27,6 +29,7 @@
     border: 5px solid #9356DC;
     animation: ClipFix $animation-duration linear infinite ;
   }
+
   .loader::after{
     border-color: #FF79DA;
     animation: ClipFix $animation-duration linear infinite , rotation 0.5s linear infinite reverse;
