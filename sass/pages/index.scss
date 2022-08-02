@@ -1,7 +1,7 @@
 .localisation{
     background-color: #f3f3f3;
     @include flex;
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 24rem;
     font-size: 1.2rem;
     position: relative;
 }
@@ -18,7 +18,7 @@
     outline: none;
     border:1px solid #f2f2f2;
     padding: 5px;
-
+    background-color: #f3f3f3;
 }
 
 .intro{
@@ -79,6 +79,11 @@
         cursor: pointer; 
     }
 }
+
+.tuto__etape:hover .tuto__icone{
+        background-color: lighten($primary, 30%); 
+}
+
 
 .tuto__icone{
     margin-right: 0.8rem;
