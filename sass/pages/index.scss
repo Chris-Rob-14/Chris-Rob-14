@@ -1,7 +1,7 @@
 .localisation{
     background-color: #f3f3f3;
     @include flex;
-    padding: 1.25rem 24rem;
+    padding: 1.25rem 2rem;
     font-size: 1.2rem;
     position: relative;
 }
@@ -61,19 +61,20 @@
     counter-reset: compteListe;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .tuto__etape{
     display: flex;
     padding: 1.5rem;
-    margin: 1rem 0.7rem;
+    margin: 0.5rem 0.7rem;
     background-color: #f6f6f6;
     border-radius: 1.25rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,.125);
     position: relative;
     align-items: center;
+    min-width: 264px;
     &:hover{
         background-color: lighten($primary, 30%);
         cursor: pointer; 
