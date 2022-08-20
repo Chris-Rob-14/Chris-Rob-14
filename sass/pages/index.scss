@@ -1,7 +1,7 @@
 .localisation{
     background-color: #f3f3f3;
     @include flex;
-    padding: 1.25rem 2rem;
+    padding: 1.25rem 1rem;
     font-size: 1.2rem;
     position: relative;
 }
@@ -19,6 +19,7 @@
     border:1px solid #f2f2f2;
     padding: 5px;
     background-color: #f3f3f3;
+    width: 140px;
 }
 
 .intro{
@@ -59,40 +60,29 @@
     padding: 0;
     list-style: none;
     counter-reset: compteListe;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .tuto__etape{
     display: flex;
     padding: 1.5rem;
-    margin: 0.5rem 0.7rem;
+    margin: 1rem 0.7rem;
     background-color: #f6f6f6;
     border-radius: 1.25rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,.125);
     position: relative;
     align-items: center;
-    min-width: 264px;
-    &:hover{
-        background-color: lighten($primary, 30%);
-        cursor: pointer; 
+&:hover{
+    background-color: lighten($primary, 30%);
+    cursor: pointer; 
+    .tuto__icone{
+        color: $primary;
+        }
     }
 }
-
-.tuto__etape:hover .tuto__icone{
-        background-color: lighten($primary, 30%); 
-}
-
 
 .tuto__icone{
     margin-right: 0.8rem;
     color: #7e7e7e;
-}
-
-.tuto__icone:hover{
-            color: $primary; 
 }
 
 .pastille__num{
@@ -152,9 +142,16 @@
     font-weight: bold;
 }
 
-@media screen and (min-width:765px){
+@media screen and (min-width:767px){
     .titre__etapes, .titre__restaurants{
        text-align: center;
+}
+
+.tuto__etapes{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-around;
 }
 
 .cartes__restaurants{
