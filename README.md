@@ -1,14 +1,11 @@
-# Oh-my-food-OCR-RC
-Réalisaition du projet 3 de la formation développeur web via Open Classroom.
+La Panthère Open Classrooms Robine Christopher
 
-Technoloig utilisée : HTML5 - CSS3 - SASS (SCSS) - AUOTPREFIXER - POSTCSS - GIT - GITHUB - GIT HUB PAGES
+Optimisation d'un site éxistant
 
-Les objectifs : 
+Audit SEO et Accessibilité 
 
-Mettre en place un environnement de développement front-end
+Trouver au moins 10 recommandation sur ces thèmes afin d'optimiser la rapidité du site ainsi que son référencement sur google.
 
-Créer des animations complexe en CSS
+Effectuer un système de versionning et comparer ainsi les versions d'origine et celle optimisée.
 
-Utilisation de Git et  Github pour le versionning ainsi que Github Pages pour le déploiement du site
-
-Respecter une charte graphique sur l'ensemble du site
+passer tous les codes aux validateurs HTML et CSS.
